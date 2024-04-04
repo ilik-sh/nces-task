@@ -1,6 +1,5 @@
 import { Box, Typography, styled } from "@mui/material";
 import { NotFound } from "app/assets/icons/not-found.icon";
-
 import { useNavigate } from "react-router-dom";
 
 type Props = {};
