@@ -1,30 +1,47 @@
-# React + TypeScript + Vite
+# Тестовое задание от НЦЭУ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Тестовым заданием являлась разработка приложения для предоставления
+данных с использованием API государственных реестров и национального банка.
 
-Currently, two official plugins are available:
+Разработка проводилась на языке JavaScript с использованием библиотек:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Material UI
+- Zustand
+- axios
+- react-hook-form
+- yup
 
-## Expanding the ESLint configuration
+## Что было выполнено
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [x] Отправка запросов к API с обработкой ответов и их типизацией
+- [x] Адаптивная верстка компонентов для корректного отображения на маленьких экранах
+- [x] Предоставление данных в удобном для пользователя виде
 
-- Configure the top-level `parserOptions` property like this:
+Приложение размещенное на веб-хостинге Render([ссылка](https://nces-task.onrender.com/)) имеет проблемы с доступом к API Государственного реестра плательщиков, поскольку на нем используется протокол HTTP. Так как хостинг размещает предоставленное приложение с использованием протокола HTTPS, то получение данных с использованием устаревшего протокола не представляется возможным.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Скриншоты
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### Стартовая страница
+
+![Стартовая страница](/public/screenshots/landing-page.png?raw=true "Стартовая страница")
+
+### Вкладка УНП
+
+![Вкладка УНП](/public/screenshots/unp-tab.png?raw=true "Вкладка УНП")
+
+### Вкладка УНП c данными
+
+![Вкладка УНП c данными](/public/screenshots/unp-tab-data.png?raw=true "Вкладка УНП c данными")
+
+### Вкладка курса
+
+![Вкладка курса](/public/screenshots/rate-tab.png?raw=true "Вкладка курса")
+
+### Вкладка курса c данными
+
+![Вкладка курса c данными](/public/screenshots/rate-tab-data.png?raw=true "Вкладка курса c данными")
+
+### Страница 404
+
+![Страница 404](/public/screenshots/not-found-page.png?raw=true "Страница 404")
